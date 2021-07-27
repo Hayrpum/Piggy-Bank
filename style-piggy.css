@@ -1,0 +1,27 @@
+.container{
+    width: 1200px;
+    height: 700px;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+.input-list{
+    
+    width: 1000px;
+    height: 50px;
+    border: solid black 1px;
+    display: flex;
+}
+.task{
+    width: 100px;
+    height: 60px;
+    border: solid black 1px;
+}
+.output{
+    width: 100px;
+    height: 60px;
+    border: solid black 1px;
+}
+.input{
+    margin-left: 40px ;
+}
