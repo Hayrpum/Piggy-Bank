@@ -1,62 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     margin-left: 0px;
 }
-
 .container{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-  
-    width: 1152px;
-    height: 700px; 
 }
-
 .section {
     display: flex;
     justify-content:space-around;
 }
-
 .task-section {
-    background-color:#DEB887;
-    width: 285px;
-    height: 300px;
-    border: 1px solid black;
+    width: 312px;
+    height: 440px;
+    border: 4mm ridge rgb(222, 184, 135);
     border-radius: 10px;
     box-sizing: border-box;
     padding-top: 7px;
 }
-
 .input-list{
     width: 269px;
-    height: 132px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     margin-left: 7px;
 }
-
 .input {
     margin-top: 5px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 17px;
 }
-
 .task{
-    width: 268px;
+    width: 170px;
     height: 60px;
     border: 1px solid black;
-    margin-top: 3px;
-    margin: auto;
+    margin-top: 15px;
+    margin-left: 15px;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color:#E0FFFF;
+    background-color:#66CDAA;
 }
-
 .title-p {
-    padding-left: 111px;
+    padding-left: 39px;
     font-size: 20px;
     margin-top: 16px;
+    font-family: 'Indie Flower', cursive;
 }
-
 .result {
     height: 25px;
     border-radius: 5px;
@@ -64,27 +57,89 @@ body {
     border: 1px solid black;
     margin-left: 6px;
     margin-right: 6px;
+    margin-top: 3px;
     background-color:cornsilk;
 }
-
 .btn-group {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
-
 .btn-calculate {
-    width: 128px;  
-}
-
-.btn-delete {
-    width: 128px;  
-}
-
-.p-payment {
+    width: 128px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 15px 15px 10px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
     font-size: 14px;
-    margin-top: 0;
+    font-weight: 600;
+    text-decoration: none;
+    color:black;
+    background-color: #FAEBD7;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+.btn-delete {
+    width: 140px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 7px 15px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color:black;
+    background-color: #FAEBD7;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+.p-payment {
+    font-size: 18px;
+    margin-top: 10px;
     margin-bottom: 0;
     margin-left: 8px;
+    font-family: 'Indie Flower', cursive;
 }
-
+.new-p-result{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.foot {
+    display: flex;
+}
+.logo {
+    width: 80px;
+    height: 103px;
+}
+.img-logo{
+    width: 88%;
+    margin-left: 5px;
+}
+#logo-text{
+    width: 70px;
+    font-size: 18px;
+    margin-top: -7px;
+    margin-bottom: 0;
+    margin-left: 7px;
+    font-family: 'Indie Flower', cursive;
+}
