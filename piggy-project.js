@@ -108,6 +108,7 @@ function creatNewForm() {
         }
         function calculateResult() {
             let sumPer = 0
+            
             for (i = 1; i < Number(term_input.value) + 1; i++) {
                 sumPer = sumPer + (1 + Number(percent.value) / 100) ** i
                 let payment = (Number(sum_input.value) - ((1 + Number(percent.value) / 100) ** Number(term_input.value)) * Number(startSum.value)) / sumPer
@@ -117,6 +118,7 @@ function creatNewForm() {
                 }
                 area.innerHTML = payment.toFixed(2)
             }
+    
         }
         calculateResult()
     }
