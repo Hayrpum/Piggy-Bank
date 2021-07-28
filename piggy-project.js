@@ -18,10 +18,10 @@ let formContent = `
                 </div>
                 <div class="input-list">
                     <input id="purpose" type="text" class="input" placeholder="purpose">
-                    <input id="sum" type="number" class="input" placeholder="required amount">
-                    <input id="term" type="number" class="input" placeholder="term">
-                    <input id="start-sum" type="number" class="input" placeholder="initial amount">
-                    <input id="percent" type="number" class="input" placeholder="percent">
+                    <input id="sum" type="number" min = 0  class="input" placeholder="required amount">
+                    <input id="term" type="number" min = 0  class="input" placeholder="term">
+                    <input id="start-sum" type="number"min = 0  class="input" placeholder="initial amount">
+                    <input id="percent" type="number" min = 0 class="input" placeholder="percent">
                 </div>
                 <div class="payment">
                     <p class="p-payment">monthly payment :</p>
@@ -111,7 +111,7 @@ function creatNewForm() {
             for (i = 1; i < Number(term_input.value) + 1; i++) {
                 sumPer = sumPer + (1 + Number(percent.value) / 100) ** i
                 let payment = (Number(sum_input.value) - ((1 + Number(percent.value) / 100) ** Number(term_input.value)) * Number(startSum.value)) / sumPer
-                console.log(payment)
+
                 if (payment < 0) {
                     payment = 0
                 }
@@ -124,11 +124,11 @@ function creatNewForm() {
         algoritmCalc()
     })
     sum_input.addEventListener('input', () => {
-        
+
         algoritmCalc()
     })
     startSum.addEventListener('input', () => {
-        
+
         algoritmCalc()
     })
     term_input.addEventListener('input', () => {
