@@ -73,10 +73,17 @@ function creatNewForm() {
     })
     const calc = newElementDiv.querySelector('.btn-calculate')
     const newTask = newElementDiv.querySelector('.task')
+    let area = newElementDiv.querySelector('.result')
+    const sum_input = newElementDiv.querySelector('#sum')
+    const term_input = newElementDiv.querySelector('#term')
+    const startSum = newElementDiv.querySelector('#start-sum')
+    const purpose = newElementDiv.querySelector('#purpose')
+    const percent = newElementDiv.querySelector('#percent')
     newTask.addEventListener('click', () => {
         creatNewForm()
     })
     function algoritmCalc() {
+
         let object = dataArray.find((el) => {
             return el.id === newElementDiv.id
         });
