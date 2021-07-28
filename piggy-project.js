@@ -120,21 +120,33 @@ function creatNewForm() {
         }
         calculateResult()
     }
+
     calc.addEventListener('click', (event) => {
         algoritmCalc()
     })
     sum_input.addEventListener('input', () => {
-
+        if(Number(sum_input.value) < 0){
+            sum_input.value=0 
+        }
         algoritmCalc()
+        
     })
     startSum.addEventListener('input', () => {
-
+        if(Number(startSum.value) < 0){
+            startSum.value=0 
+        }
         algoritmCalc()
     })
     term_input.addEventListener('input', () => {
+        if(Number(term_input.value) < 0){
+            term_input.value=0 
+        }
         algoritmCalc()
     })
     percent.addEventListener('input', () => {
+        if(Number(percent.value) < 0){
+            percent.value=0 
+        }
         algoritmCalc()
     })
 }
