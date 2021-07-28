@@ -7,34 +7,42 @@ function generateId() {
 }
 
 let formContent = `
-<div class="section">
-    <div class="task-section">
-        <div class="task">
-            <p class="title-p">Task</p>
+        <div class="section">
+            <div class="task-section">
+                <div class="foot">
+                    <div class="logo">
+                        <img class="img-logo" src="./img/Clip1.jpg" alt="logo"></img>
+                        <p id="logo-text">moneybox</p>
+                    </div>
+                    <div class="task">
+                        <p class="title-p">new dream</p>
+                    </div>
+                </div>
+                <div class="input-list">
+                    <input id="purpose" type="text" class="input" placeholder="purpose">
+                    <input id="sum" type="number" class="input" placeholder="required amount">
+                    <input id="term" type="number" class="input" placeholder="term">
+                    <input id="start-sum" type="number" class="input" placeholder="initial amount">
+                    <input id="percent" type="number" class="input" placeholder="percent">
+                </div>
+                <div class="payment">
+                    <p class="p-payment">monthly payment :</p>
+                </div>
+                <div class="result">
+                    
+                </div>
+                <div class="btn-group">
+                    <button class="btn-calculate">
+                        Calculate
+                    </button>
+                    <button class="btn-delete">
+                        Delete
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="input-list">
-            <input id="purpose" type="text" class="input" placeholder="Цель">
-            <input id="sum" type="number" class="input" placeholder="Требуемая сумма">
-            <input id="term" type="date" class="input" placeholder="Срок">
-            <input id="start-sum" type="number" class="input" placeholder="Стартовая сумма">
-            <input id="percent" type="number" class="input" placeholder="Процент">
-        </div class="payment">
-        <p class="p-payment">monthly payment:</p>
-        <div class="result">
-
-        </div>
-        <div class="btn-group">
-            <button class="btn-calculate">
-                Calculate
-            </button>
-            <button class="btn-delete">
-                Delete
-            </button>
-        </div>
-
-    </div>
-</div>
 `
+
 
 
 creatNewForm()
